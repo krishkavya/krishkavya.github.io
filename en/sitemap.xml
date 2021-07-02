@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://github.com/krishkavya/krishkavya.github.io/posts/1/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://github.com/krishkavya/krishkavya.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://github.com/krishkavya/krishkavya.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://github.com/krishkavya/krishkavya.github.io/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://github.com/krishkavya/krishkavya.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://github.com/krishkavya/krishkavya.github.io/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://github.com/krishkavya/krishkavya.github.io/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://github.com/krishkavya/krishkavya.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://github.com/krishkavya/krishkavya.github.io/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://github.com/krishkavya/krishkavya.github.io/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://github.com/krishkavya/krishkavya.github.io/fr/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://github.com/krishkavya/krishkavya.github.io/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://github.com/krishkavya/krishkavya.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://github.com/krishkavya/krishkavya.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://github.com/krishkavya/krishkavya.github.io/tags/"
+                />
+  </url>
+  
+</urlset>
