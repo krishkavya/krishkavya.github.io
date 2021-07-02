@@ -3,70 +3,70 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://github.com/krishkavya/krishkavya.github.io/posts/1/01/</loc>
+    <loc>https://krishkavya.github.io/posts/1/01/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/krishkavya/krishkavya.github.io/about/</loc>
+    <loc>https://krishkavya.github.io/about/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/krishkavya/krishkavya.github.io/categories/</loc>
+    <loc>https://krishkavya.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://github.com/krishkavya/krishkavya.github.io/fr/categories/"
+                href="https://krishkavya.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/krishkavya/krishkavya.github.io/categories/"
+                href="https://krishkavya.github.io/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://github.com/krishkavya/krishkavya.github.io/</loc>
+    <loc>https://krishkavya.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://github.com/krishkavya/krishkavya.github.io/fr/"
+                href="https://krishkavya.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/krishkavya/krishkavya.github.io/"
+                href="https://krishkavya.github.io/"
                 />
   </url>
   
   <url>
-    <loc>https://github.com/krishkavya/krishkavya.github.io/posts/</loc>
+    <loc>https://krishkavya.github.io/posts/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/krishkavya/krishkavya.github.io/series/</loc>
+    <loc>https://krishkavya.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://github.com/krishkavya/krishkavya.github.io/fr/series/"
+                href="https://krishkavya.github.io/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/krishkavya/krishkavya.github.io/series/"
+                href="https://krishkavya.github.io/series/"
                 />
   </url>
   
   <url>
-    <loc>https://github.com/krishkavya/krishkavya.github.io/tags/</loc>
+    <loc>https://krishkavya.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://github.com/krishkavya/krishkavya.github.io/fr/tags/"
+                href="https://krishkavya.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/krishkavya/krishkavya.github.io/tags/"
+                href="https://krishkavya.github.io/tags/"
                 />
   </url>
   
