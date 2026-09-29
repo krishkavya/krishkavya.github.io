@@ -1,172 +1,1090 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-	<meta name="generator" content="Hugo 0.68.3" />
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Kavya Krishnan ">
-<meta name="description" content="Competitive Programmer" />
-<meta name="keywords" content="" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="" />
-<link rel="canonical" href="https://krishkavya.github.io/" />
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavya Krishnan | Software Engineer @ Schneider Electric</title>
+  <meta name="description" content="Portfolio of Kavya Krishnan, Software Engineer at Schneider Electric specializing in Java, Spring Boot, Azure Cloud, microservices, and large-scale telemetry systems.">
+  <meta name="keywords" content="Kavya Krishnan, Software Engineer, Schneider Electric, Java, Spring Boot, Azure, Microservices, FOSS@Amrita, amFOSS, Bengaluru, Portfolio">
+  <meta name="author" content="Kavya Krishnan">
 
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Kavya Krishnan | Software Engineer">
+  <meta property="og:description" content="Software Engineer at Schneider Electric | Distributed Systems, Microservices & Telemetry Platforms.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/72289432?v=4">
+  <meta property="og:url" content="https://krishkavya.github.io/">
+  <meta property="og:type" content="website">
 
-    <title>
-        
-            Kavya Krishnan  —   
-        
-    </title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              dark: '#080c14',
+              card: '#0f172a',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen relative antialiased selection:bg-emerald-500 selection:text-white">
 
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 px-5 py-3 rounded-xl bg-slate-900/95 text-white border border-emerald-500/40 shadow-2xl flex items-center gap-3 backdrop-blur-md text-sm font-medium">
+    <span>Notification</span>
+  </div>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
+  <!-- Ambient Glow Backgrounds -->
+  <div class="ambient-glow-emerald -top-32 -left-32 opacity-40"></div>
+  <div class="ambient-glow-cyan top-96 -right-32 opacity-30"></div>
+  <div class="ambient-glow-emerald bottom-96 left-1/3 opacity-25"></div>
 
+  <!-- Background Grid Pattern -->
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0"></div>
 
-
-<link rel="stylesheet" href="https://krishkavya.github.io/main.031a8efc33f94f55a4071bf4e91596478a5809fc8c148fab113801189cfd2152.css">
-
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://krishkavya.github.io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://krishkavya.github.io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://krishkavya.github.io/favicon-16x16.png">
-    <link rel="manifest" href="https://krishkavya.github.io/site.webmanifest">
-    <link rel="mask-icon" href="https://krishkavya.github.io/safari-pinned-tab.svg" color="#1b1c1d">
-    <link rel="shortcut icon" href="https://krishkavya.github.io/favicon.ico">
-    <meta name="msapplication-TileColor" content="#1b1c1d">
-    <meta name="theme-color" content="#1b1c1d">
-
-
-
-<meta itemprop="name" content="Kavya Krishnan">
-<meta itemprop="description" content="Nice theme for homepages and blogs">
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://krishkavya.github.io"/>
-
-<meta name="twitter:title" content="Kavya Krishnan"/>
-<meta name="twitter:description" content="Nice theme for homepages and blogs"/>
-
-
-
-
-    <meta property="og:title" content="Kavya Krishnan" />
-<meta property="og:description" content="Nice theme for homepages and blogs" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://krishkavya.github.io/" />
-<meta property="og:image" content="https://krishkavya.github.io"/>
-
-
-
-
-
-
-
-
-
-<link rel="alternate" type="application/rss+xml" href="https://krishkavya.github.io/index.xml" title="Kavya Krishnan" />
-
-
-
-
-
-
-
-    </head>
-
-    
-    <body class="">
-
-    
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://krishkavya.github.io/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">&gt;</span>
-            <span class="logo__text">$ cd /home/</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://krishkavya.github.io/about/">About</a></li><li><a href="https://krishkavya.github.io/education/">Education</a></li><li><a href="https://krishkavya.github.io/projects/">projects</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
-                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
- </svg></span>
-        </span>
-    </span>
-</header>
-
-
-            <div class="content">
-                
-    <main aria-role="main">
-        <div>
-            
-               <img src="https://krishkavya.github.io/img/image.jpg" class="circle" alt="Portrait" style="max-width:300px" />
-            
-
-            <h1>Kavya Krishnan</h1>
-                <p>Competitive Programmer</p>
-                <div>
-                    &nbsp; <a href="https://github.com/krishkavya" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;&nbsp; <a href="mailto:krishkavya03@gmail.com" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;&nbsp; <a href="#ZgotmplZ" target="_blank" rel="noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/kavya-krishnan-635292201/" target="_blank" rel="noopener" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a> &nbsp;
-                </div>
+  <!-- HEADER / NAVIGATION -->
+  <header class="fixed top-0 left-0 right-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand / Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center font-bold text-white shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-200">
+          KK
         </div>
-    </main>
+        <div>
+          <span class="font-bold text-lg tracking-tight group-hover:text-emerald-400 transition-colors">Kavya Krishnan</span>
+          <span class="hidden sm:block text-xs text-slate-400 font-mono">Software Engineer</span>
+        </div>
+      </a>
 
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300 font-medium">
+        <a href="#about" class="nav-link hover:text-emerald-400 transition-colors">About</a>
+        <a href="#experience" class="nav-link hover:text-emerald-400 transition-colors">Experience</a>
+        <a href="#projects" class="nav-link hover:text-emerald-400 transition-colors">Projects</a>
+        <a href="#skills" class="nav-link hover:text-emerald-400 transition-colors">Skills</a>
+        <a href="#education" class="nav-link hover:text-emerald-400 transition-colors">Education</a>
+        <a href="#contact" class="nav-link hover:text-emerald-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-slate-800/60 hover:bg-slate-700/60 border border-slate-700/50 text-slate-300 hover:text-emerald-400 transition-all duration-200">
+          <!-- Moon Icon (Dark Mode) -->
+          <svg id="theme-icon-light" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <!-- Sun Icon (Light Mode) -->
+          <svg id="theme-icon-dark" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </button>
+
+        <!-- Get In Touch CTA -->
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 hover:-translate-y-0.5">
+          <span>Let's Talk</span>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" aria-label="Open Menu" class="md:hidden p-2.5 rounded-xl bg-slate-800/60 border border-slate-700/50 text-slate-300 hover:text-white">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-slate-800/80 px-6 py-5 space-y-4">
+      <a href="#about" class="block text-slate-300 hover:text-emerald-400 text-base font-medium">About</a>
+      <a href="#experience" class="block text-slate-300 hover:text-emerald-400 text-base font-medium">Experience</a>
+      <a href="#projects" class="block text-slate-300 hover:text-emerald-400 text-base font-medium">Projects</a>
+      <a href="#skills" class="block text-slate-300 hover:text-emerald-400 text-base font-medium">Skills</a>
+      <a href="#education" class="block text-slate-300 hover:text-emerald-400 text-base font-medium">Education</a>
+      <a href="#contact" class="block text-slate-300 hover:text-emerald-400 text-base font-medium">Contact</a>
+      <div class="pt-4 border-t border-slate-800 flex gap-4">
+        <a href="https://github.com/krishkavya" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white text-sm">GitHub</a>
+        <a href="https://www.linkedin.com/in/krishkavya/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white text-sm">LinkedIn</a>
+        <a href="https://twitter.com/o5wald_" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white text-sm">Twitter/X</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="relative z-10 pt-28">
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="min-h-[88vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
+      <div class="max-w-5xl mx-auto w-full text-center sm:text-left grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-8 space-y-6">
+          
+          <!-- Status Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-badge"></span>
+            <span>Software Engineer @ Schneider Electric</span>
+          </div>
+
+          <!-- Main Title -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-100">
+              Hi, I'm <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Kavya Krishnan</span>
+            </h1>
+            <div class="h-10 text-xl sm:text-2xl font-mono text-emerald-400/90 font-medium">
+              <span id="typing-text"></span><span class="typing-cursor"></span>
+            </div>
+          </div>
+
+          <!-- Bio Description -->
+          <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Passionate backend engineer building resilient microservices, distributed architectures, and large-scale telemetry platforms. Contributing to smart energy solutions at <span class="text-slate-200 font-semibold">Schneider Electric</span> and proud alumnus & mentor at <span class="text-slate-200 font-semibold">FOSS@Amrita</span>.
+          </p>
+
+          <!-- Action CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 pt-2">
+            <a href="#projects" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold transition-all duration-200 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 flex items-center gap-2">
+              <span>View Projects</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <a href="#experience" class="px-6 py-3 rounded-xl glass-panel hover:bg-slate-800/80 text-slate-200 font-medium transition-all duration-200 hover:-translate-y-0.5 flex items-center gap-2">
+              <span>Career Journey</span>
+              <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </a>
+
+            <button class="copy-email-btn px-4 py-3 rounded-xl glass-panel hover:bg-slate-800/80 text-slate-300 hover:text-emerald-400 text-sm font-mono transition-all flex items-center gap-2">
+              <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span class="copy-icon">Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="flex items-center justify-center sm:justify-start gap-4 pt-4 border-t border-slate-800/60 text-slate-400">
+            <span class="text-xs font-mono uppercase tracking-wider text-slate-500">Connect:</span>
+            
+            <!-- GitHub -->
+            <a href="https://github.com/krishkavya" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="p-2 rounded-lg hover:bg-slate-800/80 hover:text-emerald-400 transition-colors">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/krishkavya/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="p-2 rounded-lg hover:bg-slate-800/80 hover:text-emerald-400 transition-colors">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.37 9.74V9.92H5.09v8.58h2.74z"/>
+              </svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://twitter.com/o5wald_" target="_blank" rel="noopener noreferrer" aria-label="Twitter X Profile" class="p-2 rounded-lg hover:bg-slate-800/80 hover:text-emerald-400 transition-colors">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:krishkavya03@gmail.com" aria-label="Send Email" class="p-2 rounded-lg hover:bg-slate-800/80 hover:text-emerald-400 transition-colors">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual / Avatar Card -->
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="relative group">
+            <!-- Glow background circle -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-500"></div>
+            
+            <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl glass-panel p-3.5 flex flex-col items-center justify-center overflow-hidden border border-emerald-500/30">
+              <!-- Avatar Image -->
+              <img 
+                src="https://avatars.githubusercontent.com/u/72289432?v=4" 
+                alt="Kavya Krishnan" 
+                class="w-full h-full object-cover rounded-2xl shadow-xl filter contrast-105 group-hover:scale-105 transition-transform duration-500"
+                onerror="this.onerror=null; this.src='https://media.licdn.com/dms/image/v2/D5603AQGagxqXXuUcQQ/profile-displayphoto-scale_100_100/B56Z6JFGBrIEAY-/0/1780416279088?e=1790812800&v=beta&t=9H5Un_C6hehkpQCDMRtJsYwQ5AiwYS5eJJ1Plht40KU';"
+              />
+              
+              <!-- Floating Location Pill -->
+              <div class="absolute bottom-6 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 backdrop-blur-md text-xs font-mono text-slate-300 flex items-center gap-1.5 shadow-lg">
+                <span class="text-emerald-400">📍</span>
+                <span>Bengaluru, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- METRICS & IMPACT BAR -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        
+        <div class="glass-panel p-5 rounded-2xl text-center border-slate-800/80 hover:border-emerald-500/40 transition-colors">
+          <div class="text-3xl font-extrabold text-emerald-400 font-mono">2+ yrs</div>
+          <div class="text-xs text-slate-400 uppercase font-mono tracking-wider mt-1">Enterprise Experience</div>
+        </div>
+
+        <div class="glass-panel p-5 rounded-2xl text-center border-slate-800/80 hover:border-emerald-500/40 transition-colors">
+          <div class="text-3xl font-extrabold text-cyan-400 font-mono">500+</div>
+          <div class="text-xs text-slate-400 uppercase font-mono tracking-wider mt-1">Professional Network</div>
+        </div>
+
+        <div class="glass-panel p-5 rounded-2xl text-center border-slate-800/80 hover:border-emerald-500/40 transition-colors">
+          <div class="text-3xl font-extrabold text-emerald-400 font-mono">#8 Global</div>
+          <div class="text-xs text-slate-400 uppercase font-mono tracking-wider mt-1">amFOSS GSoC Rank</div>
+        </div>
+
+        <div class="glass-panel p-5 rounded-2xl text-center border-slate-800/80 hover:border-emerald-500/40 transition-colors">
+          <div class="text-3xl font-extrabold text-cyan-400 font-mono">HEMS</div>
+          <div class="text-xs text-slate-400 uppercase font-mono tracking-wider mt-1">Energy Intelligence</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: About Narrative -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+            <span>01.</span> <span>About Me</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+            Engineering sustainable, high-throughput systems with modern cloud tech.
+          </h2>
+          
+          <div class="text-slate-300 space-y-4 leading-relaxed text-base">
+            <p>
+              I graduated with a B.Tech in Computer Science from <span class="text-emerald-400 font-medium">Amrita Vishwa Vidyapeetham</span>, where my foundation was forged in both algorithmic rigor and collaborative open source development as part of <span class="text-cyan-400 font-medium">amFOSS</span>.
+            </p>
+            <p>
+              Currently, as a <span class="text-slate-100 font-semibold">Software Design Engineer at Schneider Electric</span> in Bengaluru, I design and build microservices, event-driven platforms, and REST APIs that power next-generation <strong class="text-slate-100">Home Energy Intelligence (HEMS)</strong>. My daily work revolves around Java, Spring Boot, Microsoft Azure Cloud, SQL, and Gradle, engineering secure architectures that ingest and process massive telemetry streams.
+            </p>
+            <p>
+              Beyond corporate engineering, I have a deep-seated love for community mentorship, open source contribution, and continuous learning.
+            </p>
+          </div>
+
+          <!-- Highlight Cards -->
+          <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-mono">
+            <div class="glass-panel p-4 rounded-xl border-l-4 border-emerald-500">
+              <span class="text-slate-400 block text-xs uppercase">Core Philosophy</span>
+              <span class="text-slate-200 mt-1 block">Continuous improvement, clean architecture & real impact.</span>
+            </div>
+            <div class="glass-panel p-4 rounded-xl border-l-4 border-cyan-500">
+              <span class="text-slate-400 block text-xs uppercase">Fun Fact</span>
+              <span class="text-slate-200 mt-1 block">"I love talking almost as much as I love coding 😄"</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Quick Facts & Languages -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-5">
+            <h3 class="text-lg font-bold text-slate-100 flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <span>Quick Snapshot</span>
+            </h3>
+
+            <div class="space-y-3.5 text-sm">
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Current Role</span>
+                <span class="font-medium text-slate-200 text-right">Software Engineer I</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Company</span>
+                <span class="font-medium text-emerald-400 text-right">Schneider Electric</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Base Location</span>
+                <span class="font-medium text-slate-200 text-right">Bengaluru, India</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Hometown</span>
+                <span class="font-medium text-slate-200 text-right">Palakkad, Kerala</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">GitHub Badge</span>
+                <span class="font-medium text-cyan-400 text-right flex items-center gap-1">
+                  <span>🦈 Pull Shark</span>
+                </span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-slate-400">Languages</span>
+                <span class="font-medium text-slate-200 text-right">English, Malayalam, Tamil</span>
+              </div>
             </div>
 
-            
-                <footer class="footer">
-    
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2021</span>
-            <span><a href="https://krishkavya.github.io">Kavya Krishnan</a></span>
-            <span></span>
-            <span><a href="https://krishkavya.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-            
-        </div>
-    </div>
-    
-    
-</footer>
-
-            
+            <div class="pt-2">
+              <a href="#contact" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-center text-sm font-semibold transition-colors block">
+                Get In Touch
+              </a>
+            </div>
+          </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- 3. CAREER EXPERIENCE SECTION -->
+    <section id="experience" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="space-y-4 mb-14 text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+          <span>02.</span> <span>Career Journey</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+          Where I've Contributed & Grown
+        </h2>
+        <p class="text-slate-400 max-w-2xl text-base">
+          Proven progression from software intern to engineer delivering mission-critical energy management infrastructure.
+        </p>
+      </div>
+
+      <!-- Vertical Timeline -->
+      <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-8 space-y-12 pl-6 sm:pl-10">
+
+        <!-- Role 1: SWE I at Schneider Electric -->
+        <div class="relative group">
+          <!-- Marker Dot -->
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-slate-900 border-2 border-emerald-400 flex items-center justify-center group-hover:scale-125 transition-transform duration-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          </div>
+
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono font-medium">Present Role</span>
+                <h3 class="text-xl font-bold text-slate-100 mt-2">Software Engineer I</h3>
+                <h4 class="text-base text-emerald-400 font-medium">Schneider Electric · Full-time</h4>
+              </div>
+              <div class="text-right">
+                <span class="text-sm font-mono text-slate-300">Aug 2024 – Present</span>
+                <span class="block text-xs text-slate-500">Bengaluru, Karnataka · Hybrid</span>
+              </div>
+            </div>
+
+            <ul class="space-y-2.5 text-slate-300 text-sm leading-relaxed mb-6 list-disc list-inside">
+              <li>Architect and implement microservices and RESTful platforms powering <strong class="text-slate-100">Home Energy Intelligence (HEMS)</strong> solutions.</li>
+              <li>Ingest, validate, and manage high-volume telemetry and sensor data workflows using Java, Spring Boot, SQL, and Azure Cloud.</li>
+              <li>Collaborate closely with distributed engineering leadership and product teams to enhance reliability, performance, and cyber-security of energy automation platforms.</li>
+              <li>Utilize modern build and containerization tools including Gradle, Docker, and CI/CD pipelines.</li>
+            </ul>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Java</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Spring Boot</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Azure Cloud</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Microservices</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">HEMS Telemetry</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">SQL</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Gradle</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 2: Graduate Engineering Trainee -->
+        <div class="relative group">
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-slate-900 border-2 border-cyan-400 flex items-center justify-center group-hover:scale-125 transition-transform duration-200">
+            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          </div>
+
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-slate-100">Graduate Engineering Trainee</h3>
+                <h4 class="text-base text-cyan-400 font-medium">Schneider Electric</h4>
+              </div>
+              <div class="text-right">
+                <span class="text-sm font-mono text-slate-300">Jan 2024 – Aug 2024 · 8 mos</span>
+                <span class="block text-xs text-slate-500">Bengaluru, Karnataka</span>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Deep-dive intensive training across enterprise backend engineering, software-defined architecture, automated testing, and cloud data workflows. Successfully transitioned key microservice modules to active staging environments.
+            </p>
+
+            <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Enterprise Java</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Spring Framework</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Cloud Architecture</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">API Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 3: FOSS@Amrita (amFOSS) Member & Mentor -->
+        <div class="relative group">
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-slate-900 border-2 border-emerald-400 flex items-center justify-center group-hover:scale-125 transition-transform duration-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          </div>
+
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono font-medium">Community & Open Source</span>
+                <h3 class="text-xl font-bold text-slate-100 mt-2">Member & Open Source Mentor</h3>
+                <h4 class="text-base text-emerald-400 font-medium">FOSS@Amrita (amFOSS)</h4>
+              </div>
+              <div class="text-right">
+                <span class="text-sm font-mono text-slate-300">Dec 2020 – Present · 5+ yrs</span>
+                <span class="block text-xs text-slate-500">Kollam, Kerala</span>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Active member of amFOSS, India's premier student open-source community ranked #8 globally in Google Summer of Code (GSoC) with over 50+ accepted GSoCers. Contributed to open-source software, guided junior developers in algorithmic problem-solving, and conducted technical workshops.
+            </p>
+
+            <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Open Source</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Mentorship</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Git Collaboration</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/60 text-slate-300 text-xs font-mono">Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 4: Software Intern at Schneider Electric -->
+        <div class="relative group">
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-slate-900 border-2 border-slate-600 flex items-center justify-center group-hover:scale-125 transition-transform duration-200">
+            <span class="w-2 h-2 rounded-full bg-slate-500"></span>
+          </div>
+
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border-slate-800/80 hover:border-slate-600 transition-all duration-300">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-2">
+              <div>
+                <h3 class="text-xl font-bold text-slate-100">Software Engineering Intern</h3>
+                <h4 class="text-base text-slate-400 font-medium">Schneider Electric · Internship</h4>
+              </div>
+              <div class="text-right">
+                <span class="text-sm font-mono text-slate-300">Jul 2023 – Sep 2023 · 3 mos</span>
+                <span class="block text-xs text-slate-500">Bengaluru, India</span>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Summer engineering internship building software prototypes, analyzing telemetry feeds, and understanding industrial-scale microservices architecture.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS SECTION -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+            <span>03.</span> <span>Portfolio & Projects</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+            Featured Engineering Work
+          </h2>
+          <p class="text-slate-400 max-w-xl text-base">
+            From smart energy telemetry platforms to Indic language OCR tools and distributed concurrency utilities.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 text-xs font-mono">
+          <button class="filter-btn active px-3.5 py-1.5 rounded-lg border border-emerald-500/40 bg-emerald-500/20 text-emerald-400 transition-colors" data-filter="all">All</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg border border-slate-700/50 bg-slate-800/40 text-slate-400 hover:text-white transition-colors" data-filter="cloud">Backend & Cloud</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg border border-slate-700/50 bg-slate-800/40 text-slate-400 hover:text-white transition-colors" data-filter="opensource">Open Source</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg border border-slate-700/50 bg-slate-800/40 text-slate-400 hover:text-white transition-colors" data-filter="tools">Algorithms & Tools</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Project 1: HEMS Microservices -->
+        <div class="project-card glass-panel p-6 rounded-2xl border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group" data-category="cloud">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <span class="text-xs font-mono text-emerald-400 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/20">Schneider Electric</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors mb-2">
+              Home Energy Intelligence (HEMS) Platform
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Microservices-driven platform built for high-throughput smart home energy telemetry and automation workflows. Handles real-time device metrics, data normalization, and cloud ingestion.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-5 text-xs font-mono text-slate-400">
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Java</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Spring Boot</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Azure</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Telemetry</span>
+            </div>
+            <div class="text-xs font-mono text-slate-500 flex items-center gap-1.5">
+              <span>⚡ Enterprise Infrastructure</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: indic-ocr -->
+        <div class="project-card glass-panel p-6 rounded-2xl border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group" data-category="opensource tools">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                </svg>
+              </div>
+              <a href="https://github.com/krishkavya/indic-ocr" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub Repository">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mb-2">
+              indic-ocr
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Optical Character Recognition engine customized for Indic scripts and languages. Developed to bridge digitisation gaps for regional text accessibility.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-5 text-xs font-mono text-slate-400">
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Python</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">OCR</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Computer Vision</span>
+            </div>
+            <a href="https://github.com/krishkavya/indic-ocr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 hover:underline">
+              <span>View on GitHub</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Printing_System -->
+        <div class="project-card glass-panel p-6 rounded-2xl border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group" data-category="cloud tools">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+              </div>
+              <a href="https://github.com/krishkavya/Printing_System" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub Repository">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors mb-2">
+              Concurrent Network Printing System
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Multi-threaded distributed network printing service designed using core Java sockets, concurrent queues, and robust thread-safe job scheduling algorithms.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-5 text-xs font-mono text-slate-400">
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Java</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Concurrency</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Sockets</span>
+            </div>
+            <a href="https://github.com/krishkavya/Printing_System" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:underline">
+              <span>View on GitHub</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: wscontest -->
+        <div class="project-card glass-panel p-6 rounded-2xl border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group" data-category="opensource">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <a href="https://github.com/krishkavya/wscontest" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub Repository">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mb-2">
+              wscontest
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Interactive contest platform interface built using Vue.js for managing live coding challenges, participant submissions, and hackathon scores.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-5 text-xs font-mono text-slate-400">
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Vue.js</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">JavaScript</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">UI/UX</span>
+            </div>
+            <a href="https://github.com/krishkavya/wscontest" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 hover:underline">
+              <span>View on GitHub</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: Algorithmic & Automation Suite -->
+        <div class="project-card glass-panel p-6 rounded-2xl border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group" data-category="tools">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <a href="https://github.com/krishkavya" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub Profile">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors mb-2">
+              Algorithmic Data Structures & Automation
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Optimized contact list search trees in C++ and workflow automation scripts in Python built to streamline recurring dev tasks and algorithmic problem solving.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-5 text-xs font-mono text-slate-400">
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">C++</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Python</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Data Structures</span>
+            </div>
+            <a href="https://github.com/krishkavya" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:underline">
+              <span>Explore GitHub</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6: Personal Portfolio -->
+        <div class="project-card glass-panel p-6 rounded-2xl border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group" data-category="opensource">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <a href="https://krishkavya.github.io" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" aria-label="Live Site">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mb-2">
+              krishkavya.github.io
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Lightweight static developer portfolio deployed via GitHub Pages showcasing projects, bio, and engineering achievements with zero runtime overhead.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-5 text-xs font-mono text-slate-400">
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">GitHub Pages</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">HTML5</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/60">Tailwind</span>
+            </div>
+            <a href="https://krishkavya.github.io" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 hover:underline">
+              <span>Live Site</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="space-y-4 mb-14 text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+          <span>04.</span> <span>Technical Skills</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+          Tools, Languages & Architecture
+        </h2>
+        <p class="text-slate-400 max-w-xl text-base">
+          A balanced blend of robust enterprise backend engineering, cloud ecosystems, and verified algorithmic competence.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Category 1: Backend & Microservices -->
+        <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+              ⚡
+            </div>
+            <h3 class="text-lg font-bold text-slate-100">Backend & Microservices</h3>
+          </div>
+          <p class="text-xs text-slate-400">Core architecture stack utilized for scalable microservices & APIs.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Java</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Spring Boot</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">RESTful APIs</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">SQL & Relational DBs</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Gradle</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Distributed Microservices</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Cloud & Infrastructure -->
+        <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold">
+              ☁️
+            </div>
+            <h3 class="text-lg font-bold text-slate-100">Cloud & Distributed Data</h3>
+          </div>
+          <p class="text-xs text-slate-400">Scalable cloud hosting, data ingestion & continuous delivery.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Microsoft Azure Cloud</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">IoT & Telemetry Pipelines</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Git & GitHub</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">CI/CD Pipelines</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Linux Environments</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Languages -->
+        <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+              💻
+            </div>
+            <h3 class="text-lg font-bold text-slate-100">Programming Languages</h3>
+          </div>
+          <p class="text-xs text-slate-400">Languages used across projects, algorithms & production systems.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium flex items-center gap-1.5">
+              <span>Java</span>
+              <span class="text-[10px] text-emerald-400 font-mono">Primary</span>
+            </span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium flex items-center gap-1.5">
+              <span>Python</span>
+              <span class="text-[10px] text-cyan-400 font-mono">✓ Verified</span>
+            </span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">C++</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">C</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Go</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">SQL</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Developer Tools -->
+        <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold">
+              🛠️
+            </div>
+            <h3 class="text-lg font-bold text-slate-100">Developer Tools</h3>
+          </div>
+          <p class="text-xs text-slate-400">IDEs, tools, and environments fueling daily engineering productivity.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">IntelliJ IDEA</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">VS Code</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Postman</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">GitHub CLI</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-slate-200 text-xs font-medium">Replit & Gamma</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Endorsed Strengths & Leadership -->
+        <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4 lg:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+              🌟
+            </div>
+            <h3 class="text-lg font-bold text-slate-100">Endorsed Competencies & Leadership</h3>
+          </div>
+          <p class="text-xs text-slate-400">Validated competencies endorsed by colleagues and open-source peers.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            
+            <div class="p-3 rounded-xl bg-slate-800/50 border border-slate-700/40">
+              <div class="font-bold text-slate-200 text-sm">Problem Solving</div>
+              <div class="text-xs text-emerald-400 font-mono mt-1">3 Endorsements on LinkedIn</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-800/50 border border-slate-700/40">
+              <div class="font-bold text-slate-200 text-sm">Communication</div>
+              <div class="text-xs text-cyan-400 font-mono mt-1">2 Endorsements on LinkedIn</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-800/50 border border-slate-700/40">
+              <div class="font-bold text-slate-200 text-sm">Leadership & Mentorship</div>
+              <div class="text-xs text-emerald-400 font-mono mt-1">amFOSS Open Source Mentor</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. EDUCATION & COMMUNITY SECTION -->
+    <section id="education" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="space-y-4 mb-14 text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+          <span>05.</span> <span>Education & Roots</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+          Academic Foundations
+        </h2>
+        <p class="text-slate-400 max-w-xl text-base">
+          Rigorous computer science degree combined with immersive club community learning.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- University Card -->
+        <div class="glass-panel p-8 rounded-2xl border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 relative group">
+          <div class="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono font-medium">Undergraduate</span>
+              <h3 class="text-2xl font-bold text-slate-100 mt-2">Amrita Vishwa Vidyapeetham</h3>
+              <h4 class="text-base text-emerald-400 font-medium">Bachelor of Technology (B.Tech)</h4>
+              <div class="text-slate-300 text-sm font-medium mt-0.5">Computer Science and Engineering</div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm font-mono text-slate-300">2020 – 2024</span>
+              <span class="block text-xs text-slate-500">Amritapuri Campus</span>
+            </div>
+          </div>
+
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Completed intensive 4-year coursework in Algorithms, Data Structures, Operating Systems, Computer Networks, Database Management Systems, and Distributed Computing.
+          </p>
+
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1 font-mono">
+            <div class="text-emerald-400 font-semibold">Key Affiliation:</div>
+            <div>Active member & mentor at FOSS@Amrita (amFOSS club), spearheading open source code sprints and peer learning.</div>
+          </div>
+        </div>
+
+        <!-- School Card -->
+        <div class="glass-panel p-8 rounded-2xl border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300 relative group">
+          <div class="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-mono font-medium">Schooling</span>
+              <h3 class="text-2xl font-bold text-slate-100 mt-2">Chinmaya Vidyalaya</h3>
+              <h4 class="text-base text-cyan-400 font-medium">High School Diploma</h4>
+              <div class="text-slate-300 text-sm font-medium mt-0.5">Computer Science Stream</div>
+            </div>
+            <div class="text-right">
+              <span class="text-sm font-mono text-slate-300">2006 – 2020</span>
+              <span class="block text-xs text-slate-500">Kerala, India</span>
+            </div>
+          </div>
+
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Built an early passion for technology, logic, and computing over 14 years of holistic schooling, participating in science exhibitions, coding challenges, and academic competitions.
+          </p>
+
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1 font-mono">
+            <div class="text-cyan-400 font-semibold">Foundation:</div>
+            <div>Solid grounding in mathematics, analytical problem solving, and introductory programming in C++ & Python.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CONTACT & GET IN TOUCH SECTION -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
+        <!-- Contact Info & Socials -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+            <span>06.</span> <span>Contact</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+            Let's build something remarkable together.
+          </h2>
+          <p class="text-slate-400 text-base leading-relaxed">
+            Whether you want to talk about distributed systems, energy telemetry architectures, open-source initiatives, or career collaborations—my inbox is always open!
+          </p>
 
+          <div class="space-y-4 pt-2">
+            
+            <!-- Email Box -->
+            <div class="glass-panel p-4 rounded-xl flex items-center justify-between border-slate-800/80">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-500 font-mono block">Direct Email</span>
+                  <span class="text-sm font-mono text-slate-200">krishkavya03@gmail.com</span>
+                </div>
+              </div>
+              <button class="copy-email-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-slate-300 hover:text-emerald-400 transition-colors">
+                <span class="copy-icon">Copy</span>
+              </button>
+            </div>
 
+            <!-- Location Box -->
+            <div class="glass-panel p-4 rounded-xl flex items-center gap-3 border-slate-800/80">
+              <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 font-mono block">Location</span>
+                <span class="text-sm font-medium text-slate-200">Bengaluru, Karnataka, India</span>
+              </div>
+            </div>
 
-<script type="text/javascript" src="https://krishkavya.github.io/bundle.min.ace63d93098bf623f7c286a9084a4c22bfc482944c734f87fe0b685c7c6c7fa0ad2edb028c3b4b60d3343720c8ab490b320ad7f8edf4f6e9a6b898fc529057a9.js" integrity="sha512-rOY9kwmL9iP3woapCEpMIr/EgpRMc0&#43;H/gtoXHxsf6CtLtsCjDtLYNM0NyDIq0kLMgrX&#43;O309ummuJj8UpBXqQ=="></script>
+            <!-- Profiles Links Grid -->
+            <div class="grid grid-cols-2 gap-3 pt-2">
+              <a href="https://www.linkedin.com/in/krishkavya/" target="_blank" rel="noopener noreferrer" class="glass-panel p-3.5 rounded-xl hover:border-emerald-500/40 text-center transition-all flex items-center justify-center gap-2 text-sm font-medium text-slate-300 hover:text-emerald-400">
+                <span>LinkedIn</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
 
+              <a href="https://github.com/krishkavya" target="_blank" rel="noopener noreferrer" class="glass-panel p-3.5 rounded-xl hover:border-cyan-500/40 text-center transition-all flex items-center justify-center gap-2 text-sm font-medium text-slate-300 hover:text-cyan-400">
+                <span>GitHub</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
 
+          </div>
+        </div>
 
-    </body>
+        <!-- Interactive Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-panel p-8 rounded-3xl border-slate-800/80 shadow-2xl relative">
+            <h3 class="text-xl font-bold text-slate-100 mb-2">Send a Direct Message</h3>
+            <p class="text-slate-400 text-xs font-mono mb-6">Fills out a pre-formatted message or triggers your default email client.</p>
+
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="sender-name" class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1.5">Your Name *</label>
+                  <input type="text" id="sender-name" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 focus:border-emerald-400 focus:outline-none text-slate-200 text-sm transition-colors">
+                </div>
+                <div>
+                  <label for="sender-email" class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1.5">Your Email *</label>
+                  <input type="email" id="sender-email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 focus:border-emerald-400 focus:outline-none text-slate-200 text-sm transition-colors">
+                </div>
+              </div>
+
+              <div>
+                <label for="sender-subject" class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1.5">Subject</label>
+                <input type="text" id="sender-subject" placeholder="Opportunity / Collaboration / Say Hello" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 focus:border-emerald-400 focus:outline-none text-slate-200 text-sm transition-colors">
+              </div>
+
+              <div>
+                <label for="sender-message" class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1.5">Your Message *</label>
+                <textarea id="sender-message" rows="4" required placeholder="Hi Kavya, I came across your portfolio..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 focus:border-emerald-400 focus:outline-none text-slate-200 text-sm transition-colors resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-semibold text-sm transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 flex items-center justify-center gap-2">
+                <span>Send Message</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 border-t border-slate-800/80 bg-slate-950/80 backdrop-blur-md py-12 mt-12 text-center text-sm text-slate-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-bold text-xs">
+          KK
+        </div>
+        <span class="font-semibold text-slate-300">Kavya Krishnan</span>
+        <span>© 2026</span>
+      </div>
+
+      <div class="text-xs font-mono text-slate-400">
+        Engineered with clean HTML5 & Tailwind CSS · Hosted on GitHub Pages
+      </div>
+
+      <a href="#hero" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-400 hover:text-emerald-400 transition-colors" aria-label="Back to Top">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </a>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
 </html>
